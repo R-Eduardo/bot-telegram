@@ -4,9 +4,9 @@ from telegram.ext import CommandHandler, ContextTypes
 # Função de boas-vindas (menu inicial)
 async def start(update: Update, context: ContextTypes.DEFAULT_TYPE):
     keyboard = [
-        [InlineKeyboardButton("🛍 Loja", callback_data='loja')],
-        [InlineKeyboardButton("👥 Comunidade", callback_data='comunidade')],
-        [InlineKeyboardButton("🗓 Calendário", callback_data='calendario')],
+        [InlineKeyboardButton("🛍 Fique por dentro da Moda Furia !", callback_data='loja')],
+        [InlineKeyboardButton("👥 Comunidade Furia Pelo Mundo !", callback_data='comunidade')],
+        [InlineKeyboardButton("🗓 Calendário de Jogos CS e Muito mais !", callback_data='calendario')],
     ]
     reply_markup = InlineKeyboardMarkup(keyboard)
     
@@ -18,9 +18,9 @@ async def start(update: Update, context: ContextTypes.DEFAULT_TYPE):
 # Função para exibir a tela inicial (ao pressionar o botão "Voltar")
 async def voltar(update: Update, context: ContextTypes.DEFAULT_TYPE):
     keyboard = [
-        [InlineKeyboardButton("🛍 Loja", callback_data='loja')],
-        [InlineKeyboardButton("👥 Comunidade", callback_data='comunidade')],
-        [InlineKeyboardButton("🗓 Calendário", callback_data='calendario')],
+        [InlineKeyboardButton("🛍 Fique por dentro da Moda Furia !", callback_data='loja')],
+        [InlineKeyboardButton("👥 Comunidade Furia Pelo Mundo !", callback_data='comunidade')],
+        [InlineKeyboardButton("🗓 Calendário de Jogos CS e Muito mais ! ", callback_data='calendario')],
     ]
     reply_markup = InlineKeyboardMarkup(keyboard)
     

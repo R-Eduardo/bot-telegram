@@ -35,9 +35,9 @@ async def button_handler(update: Update, context: ContextTypes.DEFAULT_TYPE):
     # Exibe as informações do Calendário
     elif query.data == 'calendario':
         eventos = [
-            "📅 28/04/2025 - Rio de Janeiro - 18h Furia x Complexity",
-            "📅 01/05/2025 - São Paulo - 20h Furia x The Mongolz",
-            "📅 01/05/2025 - São Paulo - 20h Furia x Virtus pro",
+            "📅 28/04/2025 - Rio de Janeiro - 18h CS Furia x Complexity",
+            "📅 01/05/2025 - São Paulo - 20h CS Furia x The Mongolz",
+            "📅 03/05/2025 - São Paulo - 20h CS Furia x Virtus pro",
         ]
         keyboard = [
             [InlineKeyboardButton("🔙 Voltar", callback_data='voltar')]  # Botão de Voltar

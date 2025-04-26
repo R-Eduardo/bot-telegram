@@ -1,1 +1,1 @@
-TOKEN = 'TOKEN'  # Substitua pelo seu token do Telegram'
+TOKEN = 'token'  # Substitua pelo seu token do Telegram'
