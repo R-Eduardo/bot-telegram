@@ -28,15 +28,16 @@ async def button_handler(update: Update, context: ContextTypes.DEFAULT_TYPE):
         ]
         reply_markup = InlineKeyboardMarkup(keyboard)
         await query.edit_message_text(
-            "Entre na comunidade através dos links abaixo:",
+            "Entre na comunidade através dos links abaixo e participe dos eventos !",
             reply_markup=reply_markup
         )
     
     # Exibe as informações do Calendário
     elif query.data == 'calendario':
         eventos = [
-            "📅 28/04/2025 - Rio de Janeiro - 18h",
-            "📅 01/05/2025 - São Paulo - 20h",
+            "📅 28/04/2025 - Rio de Janeiro - 18h Furia x Complexity",
+            "📅 01/05/2025 - São Paulo - 20h Furia x The Mongolz",
+            "📅 01/05/2025 - São Paulo - 20h Furia x Virtus pro",
         ]
         keyboard = [
             [InlineKeyboardButton("🔙 Voltar", callback_data='voltar')]  # Botão de Voltar

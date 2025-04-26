@@ -11,7 +11,7 @@ async def start(update: Update, context: ContextTypes.DEFAULT_TYPE):
     reply_markup = InlineKeyboardMarkup(keyboard)
     
     await update.message.reply_text(
-        "Bem-vindo Furioso! Gostaria de saber mais sobre:",
+        "Bem-vindo Furioso(a), quer ficar por dentro do que está rolando na Furia?",
         reply_markup=reply_markup
     )
 
@@ -25,7 +25,7 @@ async def voltar(update: Update, context: ContextTypes.DEFAULT_TYPE):
     reply_markup = InlineKeyboardMarkup(keyboard)
     
     await update.callback_query.edit_message_text(
-        "Bem-vindo Furioso! Gostaria de saber mais sobre:",
+        "Bem-vindo Furioso(a), quer ficar por dentro do que está rolando na Furia?",
         reply_markup=reply_markup
     )
 

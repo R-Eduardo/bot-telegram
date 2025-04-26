@@ -12,4 +12,5 @@ if __name__ == '__main__':
     app.add_handler(button_handler_instance)  # Passando o handler para os botões
 
     # Iniciando o bot
+    print("Bot iniciado...")
     app.run_polling()
